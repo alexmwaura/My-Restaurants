@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="#000000">
-
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -14,14 +12,16 @@
         android:scaleType="centerCrop" />
 
     <TextView
+        android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MyRestaurants"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
+        android:fontFamily="@font/roboto_light_italic"
+        android:text="MyRestaurants"
         android:textColor="@color/colorTextIcons"
-        android:textSize="40sp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
     <EditText
@@ -34,16 +34,14 @@
         android:padding="5dp"
         android:hint="Enter Zip Code"
         android:layout_centerHorizontal="true" />
-
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Find Restaurants"
+        android:layout_width="wrap_content"
         android:id="@+id/findRestaurantsButton"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorTextIcons"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/roboto_light_italic"
+        android:text="Find Restaurants"
+        android:textColor="@color/colorTextIcons" />
 </RelativeLayout>
