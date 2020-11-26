@@ -9,8 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RestaurantsActivity extends AppCompatActivity {
+
 
     private TextView mLocationTextView;
     private ListView mListView;
@@ -32,7 +34,8 @@ public class RestaurantsActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                
+                String restaurant = ((TextView)view).getText().toString();
+                Toast.makeText(RestaurantsActivity.this, restaurant, Toast.LENGTH_LONG).show();
             }
         });
 
