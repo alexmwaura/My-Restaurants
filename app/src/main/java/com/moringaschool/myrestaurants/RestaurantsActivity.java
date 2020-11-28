@@ -21,6 +21,9 @@ public class RestaurantsActivity extends AppCompatActivity {
             "Slappy Cakes", "Equinox", "Miss Delta's", "Andina",
             "Lardo", "Portland City Grill", "Fat Head's Brewery",
             "Chipotle", "Subway"};
+    private String[] cuisines = new String[] {"Vegan Food", "Breakfast", "Fishs Dishs", "Scandinavian", "Coffee", "English Food",
+            "Burgers", "Fast Food", "Noodle Soups", "Mexican", "BBQ", "Cuban", "Bar Food", "Sports Bar", "Breakfast", "Mexican" };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,7 @@ public class RestaurantsActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String restaurant = ((TextView)view).getText().toString();
                 Toast.makeText(RestaurantsActivity.this, restaurant, Toast.LENGTH_LONG).show();
+
             }
         });
 
